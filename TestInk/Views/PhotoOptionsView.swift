@@ -10,21 +10,21 @@ import UIKit
 
 class PhotoOptionsView: UIView {
 
-    lazy var resizeButton: UIButton = {
-        let button = UIButton(type: UIButtonType.system)
-        button.setImage(#imageLiteral(resourceName: "resizeIcon"), for: .normal)
-        //Meseret
-        button.backgroundColor = UIColor.Custom.lapisLazuli
-        button.tintColor = UIColor.Custom.whiteSmoke
-        return button
-    }()
+//    lazy var resizeButton: UIButton = {
+//        let button = UIButton(type: UIButtonType.system)
+//        button.setImage(#imageLiteral(resourceName: "resizeIcon"), for: .normal)
+//        //Meseret
+//        button.backgroundColor = UIColor.Custom.lapisLazuli
+//        button.tintColor = UIColor.Custom.whiteSmoke
+//        return button
+//    }()
     
     lazy var shareButton: UIButton = {
         let button = UIButton(type: UIButtonType.system)
         button.setImage(#imageLiteral(resourceName: "actionIcon"), for: .normal)
         //Meseret
-        button.backgroundColor = UIColor.Custom.lapisLazuli
-        button.tintColor = UIColor.Custom.whiteSmoke
+        button.backgroundColor = Stylesheet.Colors.LightBlue
+        button.tintColor = Stylesheet.Colors.Lapislazuli
         return button
     }()
     
@@ -33,8 +33,8 @@ class PhotoOptionsView: UIView {
         button.setImage(#imageLiteral(resourceName: "filterIcon"), for: .normal)
 //        button.setTitle("FILTERS", for: .normal)
         //Meseret
-        button.backgroundColor = UIColor.Custom.lapisLazuli
-        button.tintColor = UIColor.Custom.whiteSmoke
+        button.backgroundColor = Stylesheet.Colors.LightBlue
+        button.tintColor = Stylesheet.Colors.Lapislazuli
         return button
     }()
     
@@ -54,49 +54,54 @@ class PhotoOptionsView: UIView {
     }
     
     private func setUpViews() {
-        setUpResizeButton()
-        setUpShareButton()
+//        setUpResizeButton()
         setUpFiltersButton()
+        setUpShareButton()
     }
     
-    private func setUpResizeButton() {
-        addSubview(resizeButton)
-        
-        resizeButton.snp.makeConstraints { (make) in
-            make.top.leading.equalTo(self)
-            make.width.height.equalTo(self).multipliedBy(0.5)
-        }
-        
-        resizeButton.layer.masksToBounds = true
-        resizeButton.layer.borderWidth = 0.75
-        resizeButton.layer.borderColor = UIColor.Custom.whiteSmoke.cgColor
-    }
+//    private func setUpResizeButton() {
+//        addSubview(resizeButton)
+//
+//        resizeButton.snp.makeConstraints { (make) in
+//            make.top.leading.equalTo(self)
+//            make.width.height.equalTo(self).multipliedBy(0.5)
+//        }
+//
+//        resizeButton.layer.masksToBounds = true
+//        resizeButton.layer.borderWidth = 0.75
+//        resizeButton.layer.borderColor = UIColor.Custom.whiteSmoke.cgColor
+//    }
     
     private func setUpShareButton() {
         addSubview(shareButton)
         
         shareButton.snp.makeConstraints { (make) in
-            make.leading.equalTo(resizeButton.snp.trailing)
-            make.height.equalTo(self).multipliedBy(0.5)
-            make.top.trailing.equalTo(self)
+            make.leading.equalTo(filtersButton.snp.trailing)
+//            make.height.equalTo(self).multipliedBy(0.5)
+            make.top.trailing.bottom.equalTo(self)
         }
         
         shareButton.layer.masksToBounds = true
         shareButton.layer.borderWidth = 0.75
-        shareButton.layer.borderColor = UIColor.Custom.whiteSmoke.cgColor
+        shareButton.layer.borderColor = Stylesheet.Colors.Lapislazuli.cgColor
     }
     
     private func setUpFiltersButton() {
         addSubview(filtersButton)
         
         filtersButton.snp.makeConstraints { (make) in
-            make.top.equalTo(resizeButton.snp.bottom)
-            make.leading.trailing.bottom.equalTo(self)
+            make.top.bottom.leading.equalTo(self)
+            make.width.equalTo(self).multipliedBy(0.5)
         }
+
+//        filtersButton.snp.makeConstraints { (make) in
+//            make.top.equalTo(resizeButton.snp.bottom)
+//            make.leading.trailing.bottom.equalTo(self)
+//        }
         
         filtersButton.layer.masksToBounds = true
         filtersButton.layer.borderWidth = 0.75
-        filtersButton.layer.borderColor = UIColor.Custom.whiteSmoke.cgColor
+        filtersButton.layer.borderColor = Stylesheet.Colors.Lapislazuli.cgColor
     }
 
 }
