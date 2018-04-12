@@ -12,7 +12,7 @@ There are **45,000,000** Americans who have at least one tattoo abut there is a 
 - Discover and share designs with the community.
 - Accessible to ANY artistic level!
 
-## Press play to preview a short video featuring the AR functionality of TestInk
+## Press Youtube to preview a short video featuring the AR functionality of TestInk
 <p align="center">
 <a href="https://www.youtube.com/embed/NTqYqvTwX74?rel=0" frameborder="0" allow="autoplay; encrypted-media
 " target="_blank"><img src="https://github.com/melissahe/TestInk/blob/qa/Gifs/youtubeImg.png" 
