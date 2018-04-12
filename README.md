@@ -14,12 +14,13 @@ There are **45,000,000** Americans who have at least one tattoo abut there is a 
 
 ## Press play to preview a short video featuring the AR functionality of TestInk
 <p align="center">
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=NTqYqvTwX74&feature=youtu.be
+<a href="https://www.youtube.com/embed/NTqYqvTwX74?rel=0" frameborder="0" allow="autoplay; encrypted-media
 " target="_blank"><img src="https://github.com/melissahe/TestInk/blob/qa/Gifs/youtubeImg.png" 
 alt="https://github.com/melissahe/TestInk/blob/qa/Gifs/youtubeImg.png" width="240" height="180" border="10" /></a>
 </p>
 
-# Live demo coming soon!
+http://www.youtube.com/watch?feature=player_embedded&v=NTqYqvTwX74&feature=youtu.be
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NTqYqvTwX74?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## App Flow
 **Login View**| **Profile View** |
