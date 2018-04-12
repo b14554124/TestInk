@@ -19,8 +19,6 @@ There are **45,000,000** Americans who have at least one tattoo abut there is a 
 alt="https://github.com/melissahe/TestInk/blob/qa/Gifs/youtubeImg.png" width="240" height="180" border="10" /></a>
 </p>
 
-http://www.youtube.com/watch?feature=player_embedded&v=NTqYqvTwX74&feature=youtu.be
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NTqYqvTwX74?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## App Flow
 **Login View**| **Profile View** |
